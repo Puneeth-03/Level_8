@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+        <form id="Form_data" style=" padding: 25px;  border: solid; border-radius: 10px;" method="POST">
+            <label for="name">Name: </label>
+            <input required type="text" id="name" name="name" style="color: black" >
+            <br><br>
+            <label for="email">Email: </label>
+            <input required type="email" id="email" name="email" style="color: black" >
+            <br><br>
+            <label for="password">Password: </label>
+            <input  type="password" id="password" name="password" style="color: black" required >
+            <br><br>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" id="dob" name="dob" style="color: black" required>
+            <br><br>
+            <input type="checkbox" id="acceptTerms" name="acceptTerms">
+            <label for="acceptTerms">Accept Terms & Conditions</label>
+            <br><br>
+            <button  type="submit" class="b1" ><h3>Submit</h3></button>&emsp;
+            <button  type="reset" class="b1" ><h3>Reset</h3></button>
+            <br><br>
+        </form>
+        <div class="entries_box" style="border-color:pink">
+            <h2 style="text-align:center;">Entered data</h2>
+            <br>
+            <div id="entries"></div>
+           </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
